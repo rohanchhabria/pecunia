@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="pecunia/stylesheets/styles.css" />
+    <title>pecunia — expense tracker</title>
+</head>
+<body>
+    <h2 class="app-title">pecunia</h2>
+
+    <!-- this will contain my whole expense tracker. -->
+    <div class="tracker-container">
+        <h4 id="balance">your balance</h4>
+        <h2 class="balance">₹0.00</h2>
+
+        <!-- this will contain my income and expense structure. -->
+        <div class="eval-container">
+            <div class="income-container">
+                <h4>income</h4>
+                <p class="income money plus">₹0.00</p>
+            </div>
+
+            <div class="expense-container">
+                <h4>expense</h4>
+                <p class="expense money minus">₹0.00</p>
+            </div>
+        </div>
+
+        <h3>history</h3>
+        <ul class="list">
+            <!-- <li class="minus">cash <span>₹400.00</span> <button class="delete-button"><i class="material-icons">remove_circle_outline</i></button></li> -->
+        </ul>
+    
+        <h3>add new transaction</h3>
+        <form action="" class="form">
+            <div class="form-control">
+                <label for="text">Details</label>
+                <input type="text" class="details" placeholder="enter transaction details">
+            </div>
+            <div class="form-control">
+                <label for="amount">amount <br /> (negative — expense | positive — income)</label>
+                <input type="number" class="amount" placeholder="enter amount">
+            </div>
+            <button class="add-button">add transaction</button>
+        </form>
+    </div>
+
+    <script src="pecunia/scripts/script.js"></script>
+</body>
+</html>
